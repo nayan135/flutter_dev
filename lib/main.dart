@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'setting.dart';
+import 'about.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -27,11 +28,17 @@ class HomeScreen extends StatefulWidget {
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
+
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int _currentIndex = 0;
+ int _currentIndex = 0;
 
+  final List<String> indextitles = [
+    "Home Page",
+    "Settings Page",
+    "About Page",
+  ];
   final List<Widget> _pages = [
     const Center(
       child: Text(
@@ -40,13 +47,14 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
     ),
     const SettingsPage(),
+    const AboutPage(),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(_currentIndex == 0 ? 'Welcome to Flutter' : 'Settings'),
+      title: Text(indextitles[_currentIndex]),
         centerTitle: true,
       ),
       body: _pages[_currentIndex],
@@ -77,65 +85,10 @@ class _HomeScreenState extends State<HomeScreen> {
 }
 
 // Settings page widget defined in the same main.dart
-class SettingsPage extends StatelessWidget {
-  const SettingsPage({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-const Text(
-        'Settings Page',
-        style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
-      ),
-       const SizedBox(height: 20), 
-          IconButton(
-            icon: const Icon(Icons.settings, size: 40),
-            onPressed: () {
-              print('Settings icon pressed!');
-            },
-          ),
-        
-          const SizedBox(height: 10),
-        ],
-      ),
-    );
-  }
-}
 
 
 
 
 //profileee
 
-class AboutPage extends StatefulWidget {
-  const AboutPage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-const Text(
-        'Abput Page',
-        style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
-      ),
-       const SizedBox(height: 20), 
-          IconButton(
-            icon: const Icon(Icons.portable_wifi_off_outlined, size: 40),
-            onPressed: () {
-              print('Settings icon pressed!');
-            },
-          ),
-        
-          const SizedBox(height: 10),
-        ],
-      ),
-    );
-  }
-}
