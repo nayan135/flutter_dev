@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 class AboutPage extends StatelessWidget {
   const AboutPage({super.key});
 
@@ -10,30 +12,43 @@ class AboutPage extends StatelessWidget {
       
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-const Text(
-        'Abput Page',
-        style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
-      ),
-       const SizedBox(height: 20), 
-          IconButton(
-            icon: const Icon(Icons.portable_wifi_off_outlined, size: 40),
-            onPressed: () {
-              print('Settings icon pressed!');
-            },
+        children: [ 
+          
+         CircleAvatar(
+            radius: 60,
+            backgroundImage: NetworkImage('https://ictkalika.tech/images/nayan-acharya.jpg'),
           ),
-        
           const SizedBox(height: 10),
      
-      Row(children: [
-        const Text('NAYAN', style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),),
-        const SizedBox(width: 40),
-        const ElevatedButton(
-          onPressed: null,
-          child: Text('Click Me'),
-        )
-      ],)
+          const Text(
+            'Nayan Acharya',
+            style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
+          ),
+          const Text(
+            'Dev',
+            style: TextStyle(fontSize: 18, color: Colors.grey),
+          ),
+          Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+
+
+          IconButton(
+            icon: const FaIcon(FontAwesomeIcons.github, size: 40),
+            onPressed: () async {
+             launchUrl(Uri.parse("https://github.com/NAYAN135"));
+            },
+          ),
+           SizedBox(width: 20),
+           IconButton(
+            icon: const FaIcon(FontAwesomeIcons.instagram, size: 40),
+            onPressed: () async {
+             launchUrl(Uri.parse("https://instagram.com/naayan135"));
+            },
+          ),
          ],
+          ),
+        ],
       ),
     );
   }
