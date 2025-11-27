@@ -1,0 +1,14 @@
+[
+    {
+        "name": "FitGreen",
+        "description": "A fitness tracking app that helps users monitor their workouts and progress.",
+        "image": "assets/images/fitgreen.png",
+        "url": "fitgreen.nayan135.com.np",
+        "technologies": ["React", "Node.js", "MongoDB"],
+        "github": "https://github.com/nayan135/fitgreen",
+        "devs": [
+      {"name": "Nayan", "role": "Front-end", "image": "assets/images/nayan.jpg"},
+      {"name": "Narayan", "role": "Back-end", "image": "assets/images/narayan.jpg"}
+        ]
+    }
+]

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'setting.dart';
+import 'project.dart';
 import 'about.dart';
 void main() {
   runApp(const MyApp());
@@ -36,7 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   final List<String> indextitles = [
     "Home Page",
-    "Settings Page",
+    "Projects Page",
     "About Page",
   ];
   final List<Widget> _pages = [
@@ -46,7 +46,7 @@ class _HomeScreenState extends State<HomeScreen> {
         style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
       ),
     ),
-    const SettingsPage(),
+    const ProjectPage(),
     const AboutPage(),
   ];
 
@@ -71,8 +71,8 @@ class _HomeScreenState extends State<HomeScreen> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            label: 'Settings',
+            icon: Icon(Icons.cell_tower_outlined),
+            label: 'Projects',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.info),
