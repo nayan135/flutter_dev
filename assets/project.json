@@ -7,8 +7,8 @@
         "technologies": ["React", "Node.js", "MongoDB"],
         "github": "https://github.com/nayan135/fitgreen",
         "devs": [
-      {"name": "Nayan", "role": "Front-end", "image": "assets/images/nayan.jpg"},
-      {"name": "Narayan", "role": "Back-end", "image": "assets/images/narayan.jpg"}
+      {"name": "Nayan", "role": "Frontend", "image": "assets/images/nayan.jpg"},
+      {"name": "Narayan", "role": "Backend", "image": "assets/images/narayan.jpg"}
         ]
     }
 ]
