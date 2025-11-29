@@ -7,9 +7,22 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-    //lets see some idea to popup for home pagee
+    
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+           CircleAvatar(
+            radius :50,
+            backgroundImage: NetworkImage('https://ictkalika.tech/nayan-acharya.jpg'),
+          )
+
+        ]
+      ),
+      );
       
-    );
-  }
+
+      }
+    
+  
 }
