@@ -42,18 +42,10 @@ class _ProjectPageState extends State<ProjectPage> {
         return Container(
          margin: const EdgeInsets.symmetric(horizontal:12, vertical:10),
          decoration: BoxDecoration(
-          color: Colors.white,
+        
           borderRadius: BorderRadius.circular(15),
-          boxShadow: [
-            BoxShadow(
-             color: Colors.grey.withOpacity(0.3),
-             spreadRadius: 2,
-             blurRadius: 8,
-             offset: const Offset(0, 4),
-
-            ),
-
-          ],
+          
+  
          ),
          child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -62,12 +54,13 @@ class _ProjectPageState extends State<ProjectPage> {
               borderRadius: const BorderRadius.vertical(
                 top: Radius.circular(15),
               ),
-              child: Image.asset(
-                project.image, 
-                height: 200, 
-                width: double.infinity, 
-                fit: BoxFit.cover
-              ),
+              child: AspectRatio(
+          aspectRatio: 16 / 9,
+          child: Image.asset(
+            project.image,
+            fit: BoxFit.cover,
+          ),
+        ),
             ),
 
             Padding(
@@ -104,8 +97,10 @@ class _ProjectPageState extends State<ProjectPage> {
                           style: ElevatedButton.styleFrom(
                             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
                             backgroundColor: Colors.lightBlue,
+                            elevation: 0, 
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(8),
+
                             ),
                           ),
                           child: const Text("GitHub"),
@@ -125,9 +120,42 @@ class _ProjectPageState extends State<ProjectPage> {
                           ),
                           child: const Text("Live Preview"),
                         ),
-                        const SizedBox(height: 16),
+                      
                     ],
                   ),
+                    const SizedBox(height: 16),
+
+  
+
+                         const Text(
+                            "Developers",
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+
+                          const SizedBox(height: 10),
+                Row(
+                  children: project.devs.map<Widget>((dev){
+                    return Container(
+                      padding: const EdgeInsets.only(right:12.0),
+                      child: Column(
+                        children: [
+                        CircleAvatar(
+                          radius: 23,
+                          backgroundImage: NetworkImage(dev.image),
+
+                        ),
+                        const SizedBox(height: 6),
+                        Text(dev.name, style: const TextStyle(fontSize: 13)),
+                        Text(dev.role, style: const TextStyle(fontSize: 11, color: Colors.grey)),
+                        ],
+                        ),
+                      );
+                   }).toList(),
+                    ),
+
                 ],
               ),
             ),

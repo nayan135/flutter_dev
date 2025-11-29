@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'projectss.dart';
 import 'about.dart';
+import 'models/page_transition.dart';
+import 'home.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -40,15 +43,12 @@ class _HomeScreenState extends State<HomeScreen> {
     "About Page",
   ];
   final List<Widget> _pages = [
-    const Center(
-      child: Text(
-        'Hello, Nayan!',
-        style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
-      ),
-    ),
+    const HomePage(),
     const ProjectPage(),
     const AboutPage(),
   ];
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +57,19 @@ class _HomeScreenState extends State<HomeScreen> {
       title: Text(indextitles[_currentIndex]),
         centerTitle: true,
       ),
-      body: _pages[_currentIndex],
+      body: AnimatedSwitcher(
+        duration: const Duration(milliseconds: 300),
+        transitionBuilder: (Widget child, Animation<double> animation) {
+          return FadeTransition(
+            opacity: animation,
+            child: child,
+          );
+        },
+        child: Container(
+          key: ValueKey<int>(_currentIndex),
+          child: _pages[_currentIndex],
+        ),
+      ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
         onTap: (index) {

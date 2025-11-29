@@ -10,5 +10,17 @@
       {"name": "Nayan", "role": "Frontend", "image": "assets/images/nayan.jpg"},
       {"name": "Narayan", "role": "Backend", "image": "assets/images/narayan.jpg"}
         ]
+    },
+    {
+        "name": "FitGreen",
+        "description": "A fitness tracking app that helps users monitor their workouts and progress.",
+        "image": "assets/images/fitgreen.png",
+        "url": "fitgreen.nayan135.com.np",
+        "technologies": ["React", "Node.js", "MongoDB"],
+        "github": "https://github.com/nayan135/fitgreen",
+        "devs": [
+      {"name": "Nayan", "role": "Frontend", "image": "https://ictkalika.tech/images/nayan-acharya.jpg"},
+      {"name": "Narayan", "role": "Backend", "image": "https://ictkalika.tech/images/narayan-bhusal.jpg"}
+        ]
     }
 ]
