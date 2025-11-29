@@ -12,12 +12,19 @@ class HomePage extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-           CircleAvatar(
-            radius :50,
-            backgroundImage: NetworkImage('https://ictkalika.tech/nayan-acharya.jpg'),
-          )
 
-        ]
+           CircleAvatar(
+            
+          radius: 28,
+          child: Image(
+            image: NetworkImage('https://n4ce5f0tqvsfhe7l.public.blob.vercel-storage.com/nayan-acharya.jpg'),
+            
+          ),
+           ),
+           
+          const SizedBox(height:10),
+
+    ]
       ),
       );
       
