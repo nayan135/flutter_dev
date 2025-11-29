@@ -16,10 +16,9 @@ class HomePage extends StatelessWidget {
            CircleAvatar(
             
           radius: 28,
-          child: Image(
-            image: NetworkImage('https://n4ce5f0tqvsfhe7l.public.blob.vercel-storage.com/nayan-acharya.jpg'),
+          backgroundImage: NetworkImage('https://n4ce5f0tqvsfhe7l.public.blob.vercel-storage.com/nayan-acharya.jpg'),
             
-          ),
+        
            ),
            
           const SizedBox(height:10),
