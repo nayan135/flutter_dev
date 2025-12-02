@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_dev/home.dart';
 import 'projectss.dart';
 import 'about.dart';
-import 'home.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -18,6 +17,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         secondaryHeaderColor: Colors.amber,
+        fontFamily: 'Phantom Sans',
+
+      
       ),
       home: const HomeScreen(),
       

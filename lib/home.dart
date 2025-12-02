@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -27,6 +25,7 @@ class HomePage extends StatelessWidget {
            ),
               
             ),
+
 
             //backgroundd baabl banaunu parxȧ hai ta aajalai yeti nai 
            
