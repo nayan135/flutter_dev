@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         secondaryHeaderColor: Colors.amber,
-        fontFamily: 'Phantom Sans',
+
 
       
       ),
@@ -44,8 +44,18 @@ class _HomeScreenState extends State<HomeScreen> {
     "About Page",
   ];
   final List<Widget> _pages = [
-   
-    const HomePage(),
+   Theme(
+    data: ThemeData(
+      primarySwatch: Colors.blueGrey,
+      bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+        backgroundColor: Color.fromARGB(97, 165, 51, 51),
+        selectedItemColor: Colors.pinkAccent,
+      ),
+
+    ),
+    child: HomePage(),
+   ),
+    
     const ProjectPage(),
     const AboutPage(),
   ];
