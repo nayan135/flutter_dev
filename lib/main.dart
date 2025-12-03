@@ -56,8 +56,26 @@ class _HomeScreenState extends State<HomeScreen> {
     child: HomePage(),
    ),
     
-    const ProjectPage(),
-    const AboutPage(),
+     Theme(
+    data: ThemeData(
+      primarySwatch: Colors.blueGrey,
+      bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+        backgroundColor: Color.fromARGB(97, 165, 51, 51),
+        selectedItemColor: Colors.pinkAccent,
+      ),
+    ),
+    child: ProjectPage(),
+     ),
+     Theme(
+    data: ThemeData(
+      primarySwatch: Colors.blueGrey,
+      bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+        backgroundColor: Color.fromARGB(97, 165, 51, 51),
+        selectedItemColor: Colors.pinkAccent,
+      ),
+    ),
+    child: AboutPage(),
+     ),
   ];
 
   @override
