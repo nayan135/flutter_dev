@@ -69,6 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
      Theme(
     data: ThemeData(
       primarySwatch: Colors.blueGrey,
+      
       bottomNavigationBarTheme: const BottomNavigationBarThemeData(
         backgroundColor: Color.fromARGB(97, 165, 51, 51),
         selectedItemColor: Colors.pinkAccent,
