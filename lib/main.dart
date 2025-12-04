@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_dev/home.dart';
 import 'projectss.dart';
 import 'about.dart';
@@ -18,9 +19,22 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         secondaryHeaderColor: Colors.amber,
 
-
+ textTheme: TextTheme(
+      displayLarge: const TextStyle(
+        fontSize: 72,
+        fontWeight: FontWeight.bold,
+      ),
+      // copied from https://docs.flutter.dev/cookbook/design/themes cause i don't know what to dooo
+      titleLarge: GoogleFonts.oswald(
+        fontSize: 30,
+        fontStyle: FontStyle.italic,
+      ),
+      bodyMedium: GoogleFonts.merriweather(),
+      displaySmall: GoogleFonts.pacifico(),
+    ),
       
       ),
+  
       home: const HomeScreen(),
       
     );
@@ -48,8 +62,8 @@ class _HomeScreenState extends State<HomeScreen> {
     data: ThemeData(
       primarySwatch: Colors.blueGrey,
       bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-        backgroundColor: Color.fromARGB(97, 165, 51, 51),
-        selectedItemColor: Colors.pinkAccent,
+        backgroundColor: Color.fromARGB(96, 123, 1, 1),
+        selectedItemColor: Colors.pink,
       ),
 
     ),

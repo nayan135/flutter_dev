@@ -56,12 +56,15 @@ class _ProjectPageState extends State<ProjectPage> {
               ),
               child: AspectRatio(
           aspectRatio: 16 / 9,
-          child: Image.asset(
-            project.image,
+          child: FadeInImage(
+            placeholder: AssetImage('assets/images/loading.gif'),
+            image: AssetImage(project.image),
             fit: BoxFit.cover,
           ),
+            
+          ),
         ),
-            ),
+            
 
             Padding(
               padding: const EdgeInsets.all(12),

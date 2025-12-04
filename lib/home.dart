@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 class HomePage extends StatelessWidget {
   
@@ -28,7 +29,10 @@ class HomePage extends StatelessWidget {
             ),
 
 
-            //backgroundd baabl banaunu parxȧ hai ta aajalai yeti nai 
+            //backgroundd baabl banaunu parxȧ hai ta aajalai yeti nai
+            //background lai flutter shader use garni vaiyoo 
+            //aani aaba chai mathi top right tira globe ko icon anni side ma country code
+            //tes paxi tesko tala current local time i guess aaile lai yeti ma doen garam 
            
           
           ),
