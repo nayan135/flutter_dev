@@ -1,53 +1,131 @@
 import 'package:flutter/material.dart';
+import 'dart:ui';
 
 class HomePage extends StatelessWidget {
-  
   const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-           child:ClipRRect(
-              borderRadius: const BorderRadius.vertical(
-                top: Radius.circular(15),
+
+            decoration: BoxDecoration(
+             
+ 
+                
+            borderRadius: BorderRadius.circular(20),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black38,
+                blurRadius: 20,
+                spreadRadius: 3,
+                offset: const Offset(1, 10),
               ),
-            child: Container(
+            ],
+            ),
+           child:ClipRRect(
+            borderRadius: BorderRadius.circular(18),
+              child: Stack(
+                children: [
+            Container(
               height: 350,
               width: 300,
-              color: Colors.blueAccent.withOpacity(0.2),
-               child: Text(
-            'Hellooo Welcome to the Den',
-            style: TextStyle(fontSize: 48),
-           ),
-              
+               padding: const EdgeInsets.all(20),
+             
+             
+             decoration: BoxDecoration(
+              color: Colors.white38.withOpacity(0.16),
+               borderRadius: BorderRadius.circular(17),
+               image: const DecorationImage(
+            image: NetworkImage(
+              "https://ictkalika.tech/images/nayan-acharya.jpg",
+            ),
+            fit: BoxFit.cover,
+          ),
+               border: Border.all(
+                color: Colors.white10.withOpacity(0.4),
+
+               ),
+
+             ),
+            
+            ),
+            
+             Container(
+               Text(
+            'Hellooo ',
+            style: TextStyle(
+              fontSize: 48,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+              letterSpacing: 1,
+
             ),
 
+           ),
+           SizedBox(height:10),
+           Text(
+            'Welcome to the Den',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 22,
+              color: Colors.white60,
 
-            //backgroundd baabl banaunu parxȧ hai ta aajalai yeti nai
+            ),
+
+           )
+        
+        ],
+      ),
+        BackdropFilter(
+                    filter: ImageFilter.blur(sigmaX: 10, sigmaY: 15),
+                    child: Container(
+                      height: 350,
+                      width: 300,
+                      decoration: BoxDecoration(
+                        color: Colors.black.withOpacity(0.25), // ✅ Glass tint
+                        borderRadius: BorderRadius.circular(20),
+                        border: Border.all(
+                          color: Colors.white.withOpacity(0.3),
+                        ),
+                      ),
+                    ),
+                  ),
+          
+          ),
+                ],
+           ),
+           ),
+          ),
+             ],
+          ),
+      
+      );
+      
+          
+
+      }
+    
+  
+}
+
+
+
+
+
+
+
+
+//backgroundd baabl banaunu parxȧ hai ta aajalai yeti nai
             //background lai flutter shader use garni vaiyoo 
             //aani aaba chai mathi top right tira globe ko icon anni side ma country code
             //tes paxi tesko tala current local time i guess aaile lai yeti ma doen garam 
-           
-          
-          ),
-          ),
-         const SizedBox(height:10),
-Padding(
-            padding: EdgeInsets.all(10),
-         
-         
-          
-        ),
-         
 
-        ],
-          ),
-          /* CircleAvatar(
+
+             /* CircleAvatar(
             
           radius: 28,
           backgroundImage: NetworkImage('https://n4ce5f0tqvsfhe7l.public.blob.vercel-storage.com/nayan-acharya.jpg'),
@@ -56,12 +134,3 @@ Padding(
            ),
            */
            
-         
-    
-    
-    );
-
-      }
-    
-  
-}

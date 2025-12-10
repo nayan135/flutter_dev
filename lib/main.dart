@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_dev/home.dart';
 import 'projectss.dart';
 import 'about.dart';
-import 'diff.dart';
+//import 'diff.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -63,10 +63,11 @@ class _HomeScreenState extends State<HomeScreen> {
   final List<Widget> _pages = [
    Theme(
     data: ThemeData(
-      primarySwatch: Colors.blueGrey,
+      primarySwatch: Colors.blue,
       bottomNavigationBarTheme: const BottomNavigationBarThemeData(
         backgroundColor: Color.fromARGB(96, 123, 1, 1),
         selectedItemColor: Colors.pink,
+
       ),
 
     ),
@@ -75,7 +76,7 @@ class _HomeScreenState extends State<HomeScreen> {
     
      Theme(
     data: ThemeData(
-      primarySwatch: Colors.blueGrey,
+      primarySwatch: Colors.blue,
       bottomNavigationBarTheme: const BottomNavigationBarThemeData(
         backgroundColor: Color.fromARGB(97, 165, 51, 51),
         selectedItemColor: Colors.pinkAccent,
@@ -85,7 +86,7 @@ class _HomeScreenState extends State<HomeScreen> {
      ),
      Theme(
     data: ThemeData(
-      primarySwatch: Colors.blueGrey,
+      primarySwatch: Colors.blue,
       
       bottomNavigationBarTheme: const BottomNavigationBarThemeData(
         backgroundColor: Color.fromARGB(97, 165, 51, 51),
@@ -94,7 +95,7 @@ class _HomeScreenState extends State<HomeScreen> {
     ),
     child: AboutPage(),
      ),
-     DiffPage(),
+     //DiffPage(),
   ];
 
   @override
@@ -102,10 +103,14 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
       title: Text(indextitles[_currentIndex]),
-        centerTitle: true,
+        centerTitle: true,  
       ),
       body: _pages[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed, 
+  selectedItemColor: Colors.purpleAccent,     
+  unselectedItemColor: Colors.lightBlue, 
+
         currentIndex: _currentIndex,
         onTap: (index) {
           setState(() {
