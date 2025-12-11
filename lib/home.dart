@@ -1,15 +1,23 @@
 import 'package:flutter/material.dart';
 import 'dart:ui';
+import 'paint.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    
     return Center(
+   
+      
       child: Column(
+           
+        
         mainAxisAlignment: MainAxisAlignment.center,
+        
         children: [
+          
           Container(
 
             decoration: BoxDecoration(
@@ -26,10 +34,13 @@ class HomePage extends StatelessWidget {
               ),
             ],
             ),
+
            child:ClipRRect(
             borderRadius: BorderRadius.circular(18),
+              
               child: Stack(
                 children: [
+
             Container(
               height: 350,
               width: 300,
@@ -41,7 +52,7 @@ class HomePage extends StatelessWidget {
                borderRadius: BorderRadius.circular(17),
                image: const DecorationImage(
             image: NetworkImage(
-              "https://ictkalika.tech/images/nayan-acharya.jpg",
+              "https://n4ce5f0tqvsfhe7l.public.blob.vercel-storage.com/naa.HEIC",
             ),
             fit: BoxFit.cover,
           ),
@@ -53,9 +64,30 @@ class HomePage extends StatelessWidget {
              ),
             
             ),
+              BackdropFilter(
+                    filter: ImageFilter.blur(sigmaX: 5, sigmaY: 10),
+                    child: Container(
+                      height: 350,
+                      width: 300,
+                      decoration: BoxDecoration(
+                        color: Colors.black.withOpacity(0.25), // ✅ Glass tint
+                        borderRadius: BorderRadius.circular(20),
+                        border: Border.all(
+                          color: Colors.white.withOpacity(0.3),
+                        ),
+                      ),
+                    ),
+                  ),
             
-             Container(
-               Text(
+    Container(
+      
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        
+        children: [
+
+    
+      Text(
             'Hellooo ',
             style: TextStyle(
               fontSize: 48,
@@ -76,36 +108,23 @@ class HomePage extends StatelessWidget {
 
             ),
 
-           )
-        
+           ),
+               ],
+      ),
+             ),
+                 
+          
         ],
       ),
-        BackdropFilter(
-                    filter: ImageFilter.blur(sigmaX: 10, sigmaY: 15),
-                    child: Container(
-                      height: 350,
-                      width: 300,
-                      decoration: BoxDecoration(
-                        color: Colors.black.withOpacity(0.25), // ✅ Glass tint
-                        borderRadius: BorderRadius.circular(20),
-                        border: Border.all(
-                          color: Colors.white.withOpacity(0.3),
-                        ),
-                      ),
-                    ),
-                  ),
+  
           
+           ),
           ),
                 ],
            ),
-           ),
-          ),
-             ],
-          ),
-      
-      );
-      
-          
+       
+           );
+         
 
       }
     
