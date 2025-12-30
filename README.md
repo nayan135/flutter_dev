@@ -18,8 +18,8 @@ You can Easily download the exe file
 
 # my search history while developing this 
 ### how to use child 
-what is scafffold
-how to add image
-how to create a background
-different theme for differentţ page dart
-others i forgot 
+### what is scafffold
+### how to add image
+### how to create a background
+### different theme for differentţ page dart
+### others i forgot 
