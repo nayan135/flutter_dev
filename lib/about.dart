@@ -16,7 +16,7 @@ class AboutPage extends StatelessWidget {
           CircleAvatar(
             radius: 60,
             backgroundImage: NetworkImage(
-              'https://ictkalika.tech/images/nayan-acharya.jpg',
+              'https://n4ce5f0tqvsfhe7l.public.blob.vercel-storage.com/nayan-acharya.jpg',
             ),
           ),
 
@@ -30,7 +30,7 @@ class AboutPage extends StatelessWidget {
 
           // Role
           const Text(
-            'Dev',
+            'Dev ig',
             style: TextStyle(fontSize: 18, color: Colors.grey),
           ),
 

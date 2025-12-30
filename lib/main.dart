@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dev/blog.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_dev/home.dart';
 import 'projectss.dart';
 import 'about.dart';
+
 //import 'diff.dart';
 void main() {
   runApp(const MyApp());
@@ -58,7 +60,7 @@ class _HomeScreenState extends State<HomeScreen> {
     "Home Page",
     "Projects Page",
     "About Page",
-    "Diff Page",
+    "BLOG",
   ];
   final List<Widget> _pages = [
    Theme(
@@ -97,6 +99,7 @@ class _HomeScreenState extends State<HomeScreen> {
     child: AboutPage(),
      ),
      //DiffPage(),
+     BlogPage(),
   ];
 
   @override
@@ -131,9 +134,13 @@ class _HomeScreenState extends State<HomeScreen> {
             icon: Icon(Icons.info),
             label: 'About',
           ),
-           BottomNavigationBarItem(
+        /*   BottomNavigationBarItem(
             icon: Icon(Icons.wine_bar_rounded),
             label: 'DIFF'
+          ),*/
+           BottomNavigationBarItem(
+            icon: Icon(Icons.bluetooth_searching),
+            label: 'Blog'
           )
         ],
       ),

@@ -1,19 +1,17 @@
 # flutter_dev
+MY new flutter project.
+This is just a learing phase for me and i guess this one is just my app for me
 
-A new Flutter project.
+```
+For the best view use the apk link and view it on mobile.
+```
+To run this on windows
+```
+You can Easily download the exe file
+```
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
 
 
 
@@ -24,4 +22,4 @@ what is scafffold
 how to add image
 how to create a background
 different theme for differentţ page dart
-
+others i forgot 
