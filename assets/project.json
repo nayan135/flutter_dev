@@ -3,24 +3,37 @@
         "name": "FitGreen",
         "description": "A fitness tracking app that helps users monitor their workouts and progress.",
         "image": "assets/images/fitgreen.png",
-        "url": "fitgreen.nayan135.com.np",
+        "url": "https://fitgreen.nayan135.com.np",
         "technologies": ["React", "Node.js", "MongoDB"],
         "github": "https://github.com/nayan135/fitgreen",
         "devs": [
-      {"name": "Nayan", "role": "Frontend", "image": "assets/images/nayan.jpg"},
-      {"name": "Narayan", "role": "Backend", "image": "assets/images/narayan.jpg"}
+      {"name": "Nayan", "role": "Frontend", "image": "https://ictkalika.nayan135.com.np/images/nayan-acharya.jpg"},
+      {"name": "Narayan", "role": "Backend", "image": "https://ictkalika.nayan135.com.np/images/narayan-bhusal.jpg"}
         ]
     },
     {
-        "name": "FitGreen",
-        "description": "A fitness tracking app that helps users monitor their workouts and progress.",
-        "image": "assets/images/fitgreen.png",
-        "url": "fitgreen.nayan135.com.np",
+        "name": "EduMentor",
+        "description": "A education platform that helps young learners and beginners to learn new things easily.",
+        "image": "assets/images/edumentor.png",
+        "url": "https://edumentor.nayan135.com.np",
         "technologies": ["React", "Node.js", "MongoDB"],
-        "github": "https://github.com/nayan135/fitgreen",
+        "github": "https://github.com/nayan135/edumentor",
         "devs": [
-      {"name": "Nayan", "role": "Frontend", "image": "https://ictkalika.tech/images/nayan-acharya.jpg"},
-      {"name": "Narayan", "role": "Backend", "image": "https://ictkalika.tech/images/narayan-bhusal.jpg"}
+      {"name": "Nayan", "role": "Frontend", "image": "https://ictkalika.nayan135.com.np/images/nayan-acharya.jpg"},
+      {"name": "Narayan", "role": "Backend", "image": "https://ictkalika.nayan135.com.np/images/narayan-bhusal.jpg"}
+        ]
+    },
+        {
+        "name": "AALANKAR",
+        "description": "A music streaming platform that provides you with ad free music listening.",
+        "image": "assets/images/aalankar.png",
+        "url": "https://aalankar.nayan135.com.np",
+        "technologies": ["HTML", "CSS", "PHP","MY SQL"],
+        "github": "https://github.com/nayan135/aalankar",
+        "devs": [
+      {"name": "Nayan", "role": "Full Stack", "image": "https://ictkalika.nayan135.com.np/images/nayan-acharya.jpg"},
+      {"name":"Shasank","role":"Frontend","image":"https://ictkalika.nayan135.com.np/images/shasank-shrestha.jpg"},
+      {"name": "Narayan", "role": "Frontend", "image": "https://ictkalika.nayan135.com.np/images/narayan-bhusal.jpg"}
         ]
     }
 ]
