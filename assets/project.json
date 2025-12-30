@@ -5,7 +5,7 @@
         "image": "assets/images/fitgreen.png",
         "url": "https://fitgreen.nayan135.com.np",
         "technologies": ["React", "Node.js", "MongoDB"],
-        "github": "https://github.com/nayan135/fitgreen",
+        "github": "https://github.com/nayan135/fitgreenproj",
         "devs": [
       {"name": "Nayan", "role": "Frontend", "image": "https://ictkalika.nayan135.com.np/images/nayan-acharya.jpg"},
       {"name": "Narayan", "role": "Backend", "image": "https://ictkalika.nayan135.com.np/images/narayan-bhusal.jpg"}
@@ -17,7 +17,7 @@
         "image": "assets/images/edumentor.png",
         "url": "https://edumentor.nayan135.com.np",
         "technologies": ["React", "Node.js", "MongoDB"],
-        "github": "https://github.com/nayan135/edumentor",
+        "github": "https://github.com/nayan135/edu-mentor",
         "devs": [
       {"name": "Nayan", "role": "Frontend", "image": "https://ictkalika.nayan135.com.np/images/nayan-acharya.jpg"},
       {"name": "Narayan", "role": "Backend", "image": "https://ictkalika.nayan135.com.np/images/narayan-bhusal.jpg"}
